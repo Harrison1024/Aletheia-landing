@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "avenir";
+    src: url("fonts/avenir-next-light.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* Caracteristicas Generales */
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+}
+
+body{
+    background-color:#F4F4F4;
+}
+
+.little-logo{
+    width:120px;
+    margin-top:-40px;
+    margin-bottom:10px;
+}
+
+#container{
+    width:1420px;
+    margin:auto;
+    margin-top:50px;
+}
+
+/* Cabecero */
+#header{
+    height: 100px;
+    background: #FEFEFE;
+    color:#303540;
+}
+
+#logo{
+    float:left;
+    color:#303540;
+    font-family: avenir;
+    margin-left:90px;
+    letter-spacing: 5px;
+}
+
+#logo h1{
+    text-transform:uppercase;   
+    font-size: 36px;
+    line-height: 100px;
+}
+
+#logo:hover{
+    cursor: pointer;
+    color:#2E5F79;
+    animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes color-change {
+    0% {
+        text-shadow:0px 0px 1px #598087,0px 0px 3px #598087;
+    }
+    25% {
+        text-shadow:0px 0px 2px #4063cc,0px 0px 4px #4063cc;
+    }
+    50% {
+        text-shadow:0px 0px 1px #951ead,0px 0px 3px #951ead;
+    }
+    75% {
+        text-shadow:0px 0px 2px #d41a3c,0px 0px 4px #d41a3c;
+    }
+    100% {
+        text-shadow:0px 0px 1px #598087,0px 0px 3px #598087;
+    }
+}
+
+/* Menu */
+#menu{
+    float:right;
+    margin:30px;
+    margin-right:50px;
+}
+
+#menu ul li{
+    height:40px;
+    list-style: none;
+    display:inline-block;
+    margin-right:50px;
+}
+
+#menu ul li a{
+    display:block;
+    font-size:25px;
+    color:#303540;
+    font-family:sans-serif;
+    line-height: 40px;
+    transition: all 300ms ;
+}
+
+#menu ul li a:hover{
+    transform: scale(1.3, 1.3);
+}
+
+/* Hero Section*/
+#hero{
+    height:500px;
+    background-color:#C6DFEB;
+    padding-left:90px;
+    color:#303540;
+    font-family:sans-serif;
+    background: url("../img/hero-img.png") no-repeat;
+    background-position: -115px -300px;
+    /*background: url("../img/hero-img.png") -115px -300px;*/
+}
+
+#hero h1{
+    float:left;
+    font-size:50px;
+    margin-top:120px;
+}
+
+#hero p{
+    clear:left;
+    float:left;
+    margin-top:45px;
+    font-style: italic;
+    font-size:30px;
+}
+
+#hero #more-info{
+    clear:left;
+    float:left;
+    margin-top:45px;
+}
+
+#hero #more-info h2 a{
+    display:block;
+    color:white;
+    font-size:25px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    background-color: #2E5F79;
+}
+
+#hero #more-info h2 a:hover{
+    color:gray;
+}
+
+/* Caracteristicas */
+#characteristics{
+    height:250px;
+    background-color: #F9F9F8;
+    padding:70px 50px 60px 70px;
+    padding-top:120px;
+}
+
+#characteristics .wrap{
+    float:left;
+    margin:auto;
+    width:420px;
+    height:200px;
+    border-left:2px solid #c0c0c0;
+    text-align: center;
+}
+
+#characteristics .wrap:first-child{
+    border-left: none;
+}
+
+#characteristics .wrap h3{
+    color:#535b88;
+    font-size:35px;
+    margin:10px 40px 0px 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#characteristics .wrap p{
+    color:#0C0C0C;
+    font-size:25px;
+    margin:20px 50px 0px 50px;
+    font-family: sans-serif;
+}
+
+/* Description Section */
+#description{
+    height:320px;
+    padding:80px 60px 80px 60px;
+    background-color: white;
+    font-family:sans-serif;
+}
+
+#description h3,
+#description p{
+    float:left;
+    clear:left;
+    margin-left:30px;
+}
+
+#description h3{
+    color:#35394C;
+    font-size:45px;
+    font-weight: lighter;
+}
+
+#description p{
+    width:500px;
+    margin-top:50px;
+    text-align: justify;
+    font-size:26px;
+    color:#040407;
+}
+
+#description img{
+    float:right;
+    width:600px;
+    border-radius: 10px;
+}
+
+/* Footer*/
+#footer{
+    width:100%;
+    height:100px;
+    color:#3A3E50;
+    text-align: center;
+    line-height: 100px;
+    font-size:22px;
+    font-family: sans-serif;
+}
